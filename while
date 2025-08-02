@@ -1,0 +1,83 @@
+#i = 0
+#while i <= 5:
+ #   print(i)
+  #  i +=1
+
+
+
+
+
+#while True:
+ #   print(1) #infinity
+
+
+
+
+
+
+#while True:
+#    num = int(input("Введите число"))
+#   if num == 0:
+#        break
+#    print(num)
+
+
+
+
+
+
+# Print numbers until the user enters 0
+#number = int(input('Enter a number: '))
+
+# iterate until the user enters 0
+#while number != 0:
+#    print(f'You entered {number}.')
+#    number = int(input('Enter a number: '))
+
+#print('The end.')
+
+
+
+
+#import random
+#test = random.randint(1,2)
+#if test == 1:
+#    print("Орел")
+#else :
+#    print("Решка)
+
+
+#Функция random.uniform(a, b) из модуля random в Python 
+# возвращает случайное число с плавающей точкой (дробное число)
+#  в диапазоне от a до b, включая оба конца.
+
+#import time
+#import random
+#a = random.randint(1,2)
+#if a == 1:
+#    time.sleep(3)
+#    print("Орел")
+#elif a ==2:
+#    time.sleep(3)
+#    print("Решка")
+
+num = int(input("Введите число: "))
+num2 = int(input("Введите число: "))
+while True:
+        print("Это умный калькулятор")
+        print("1 -> +")
+        print("2 -> -")
+        print("3 -> /")
+        print("4 -> *")
+        print("5 -> Выход")
+        op = input(" ")
+        if op == 5:
+                break
+        elif op == 1:
+                print(num + num2)
+        elif op == 2:
+                print(num - num2)
+        elif op == 3:
+                print(num / num2)
+        elif op == 4:
+                print(num * num2)
