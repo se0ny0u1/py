@@ -61,23 +61,132 @@
 #    time.sleep(3)
 #    print("Решка")
 
-num = int(input("Введите число: "))
-num2 = int(input("Введите число: "))
 while True:
-        print("Это умный калькулятор")
-        print("1 -> +")
-        print("2 -> -")
-        print("3 -> /")
-        print("4 -> *")
-        print("5 -> Выход")
-        op = input(" ")
-        if op == 5:
-                break
-        elif op == 1:
-                print(num + num2)
-        elif op == 2:
-                print(num - num2)
-        elif op == 3:
-                print(num / num2)
-        elif op == 4:
-                print(num * num2)
+    num = int(input("Введите число: "))
+    op = input("Введите оператор: ")
+    num2 = int(input("Введите число: "))
+    if op == "+":
+        print(num + num2)
+    elif op == "-":
+        print(num - num2)
+    elif op == "/":
+        print(num / num2)
+    elif op == "*":
+        print(num * num2)
+    
+    a = int(input("введите 1 чтобы продолжить или 0 чтобы выйти: "))
+    if a == 0:
+        print("Вы вышлли из калькулятора")
+        break
+        
+    elif a == 1:
+        print("Продолжайте")
+
+
+
+while True:
+    print("Добро пожаловать в игру Угадай число")
+    n = int(input("введите число от 1 до 100:"))
+    import random
+    a = random.randint(1,100)
+    if a > n:
+        print(f"К сожалению вы не угадали, число {a} больше загаданного вами числа")
+    elif a < n:
+        print(f"К сожалению вы не угадали, число {a} меньше загаданного вами числа")
+    elif a == n:
+        print(f"Поздравляю! Числа {a} и {n} совпали")
+        break
+    print("Конец игры")
+    r = input("Введите + чтобы продолжить или - чтобы прекратить игру: ")
+    if r == "+":
+        print("Продолжайте игру")
+    elif r == "-":
+        print("Вы вышли из игры")
+        break
+
+
+
+
+
+
+tries = 0
+while True:
+    print("Добро пожаловать в игру Угадай число")
+    n = int(input("введите число от 1 до 100: "))
+    import random
+    a = random.randint(1,100)
+    tries = tries + 1
+    if a > n:
+        print(f"К сожалению вы не угадали, было загадано число {a}")
+    elif a < n:
+        print(f"К сожалению вы не угадали, было загадано число {a}")
+    elif a == n:
+        print("Поздравляю! Числа совпали")
+        break
+    print(f"Конец игры. Было сыграно {tries} попыток")
+    r = input("Введите + чтобы продолжить или - чтобы прекратить игру: ")
+    if r == "+":
+        print("Продолжайте игру")
+    elif r == "-":
+        print(f"Вы вышли из игры. Было сыграно {tries} попыток")
+        break
+
+
+
+
+
+
+
+
+
+
+while True:
+    print("Добро пожаловать в игру: камень, ножницы, бумага")
+    player =input("Выберите камень, ножницы или бумага:")
+    import random
+    computer = random.choice(["камень", "ножницы", "бумага"])
+    if player == computer:
+        print("Ничья!")
+    elif player == "камень" and computer  == "ножницы":
+        print(f"Ты выиграл, компьютер выбрал {computer}")
+    elif player == "ножницы" and computer == "бумага":
+        print(f"Ты выиграл, компьютер выбрал  {computer}")
+    elif player == "бумага" and computer == "камень":
+            print(f"Ты выиграл, компьютер выбрал {computer}")
+    else :
+         print(f"К сожалению ты проиграл. Компьютер выбрал {computer}")
+    print("Конец игры!")
+    r = input("Введите + чтобы продолжить или - чтобы прекратить игру: ")
+    if r == "+":
+        print("Продолжайте игру")
+    elif r == "-":
+        print("Вы вышли из игры")
+        break
+
+
+
+
+attemts = 0 
+while True:
+    print("Добро пожаловать в игру: камень, ножницы, бумага")
+    player =input("Выберите камень, ножницы или бумага:")
+    import random
+    computer = random.choice(["камень", "ножницы", "бумага"])
+    attemts = attemts + 1
+    if player == computer:
+        print("Ничья!")
+    elif player == "камень" and computer  == "ножницы":
+        print(f"Ты выиграл, компьютер выбрал {computer}")
+    elif player == "ножницы" and computer == "бумага":
+        print(f"Ты выиграл, компьютер выбрал  {computer}")
+    elif player == "бумага" and computer == "камень":
+            print(f"Ты выиграл, компьютер выбрал {computer}")
+    else :
+         print(f"К сожалению ты проиграл. Компьютер выбрал {computer}")
+    print(f"Конец игры! было сыграно {attemts} попыток")
+    r = input("Введите + чтобы продолжить или - чтобы прекратить игру: ")
+    if r == "+":
+        print(" Продолжайте игру")
+    elif r == "-":
+        print(f"Вы вышли из игры. Было сыграно {attemts} попыток")
+        break

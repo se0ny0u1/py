@@ -20,6 +20,6 @@
   #  i *= "*" 
    # print(i)
     
-range = input("Введите слово: ")
-for i in range:
-    print(i[0])
+#range = input("Введите слово: ")
+#for i in range:
+    #print(i[0])

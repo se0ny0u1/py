@@ -7,4 +7,3 @@ if password != confirm_password :
 else :
     print(f"Пользователь {username} успешно зарегистрирован")
     users.append([username,password])
-print(password in users)
